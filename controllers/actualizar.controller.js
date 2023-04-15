@@ -14,7 +14,7 @@ const obtenerInformacion = async () => {
     const email = document.querySelector("[data-email]");
 
     try {
-        const perfil = await clientServices.detalleCliente(id);
+        const perfil = await clientSevices.detalleCliente(id);
         if (perfil.nombre && perfil.email) {
             nombre.value = perfil.nombre;
             email.value = perfil.email;
